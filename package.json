@@ -10,7 +10,8 @@
     "build": "webpack --mode production --env.production --progress",
     "lint": "eslint src/*.ts*",
     "lint:fix": "eslint src/*.ts* --fix",
-    "dev": "webpack-dev-server --mode development --env.development --open --hot --progress"
+    "dev": "webpack-dev-server --mode development --env.development --open --hot --progress",
+    "test": "jest"
   },
   "dependencies": {
     "@types/node": "^14.0.27",
