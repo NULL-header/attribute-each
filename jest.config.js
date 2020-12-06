@@ -7,10 +7,10 @@ module.exports = {
   moduleFileExtensions: ["ts", "tsx", "js"],
   globals: {
     "ts-jest": {
-      tsConfig: "tsconfig.test.json",
+      tsconfig: "tsconfig.test.json",
     },
   },
   moduleNameMapper: {
-    "src/(.*)": "<rootDir>/src/$1",
+    "src(.*)": "<rootDir>/src/$1",
   },
 };
