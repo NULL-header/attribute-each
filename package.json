@@ -8,7 +8,7 @@
     "test": "jest",
     "prepare:del": "ls -a -I\".\" -I\"..\" | grep -vE \"dist|package.json|^.git$\" | xargs rm -r | rm dist/empty",
     "prepare:make": "yarn build && yarn prepare:del",
-    "prepare:git": "git add . && git commit m \"release\" && git push",
+    "prepare:git": "git add . && git commit -m \"release\" && git push",
     "prepare:run": "echo prepare && yarn prepare:make && yarn prepare:git"
   },
   "devDependencies": {
