@@ -18,7 +18,7 @@ The concise features are is the following;
 ### Yarn
 
 ```sh
-yarn install -D ssh://git@github.com:NULL-header/react-test-util.git#version
+yarn add -D ssh://git@github.com:NULL-header/attribute-each.git#version
 ```
 
 ### Npm
@@ -35,7 +35,9 @@ There are the tags as versions in the repository. So you must specify the tag na
 import { makeWith } from "./ObjManager";
 
 const item = { foo: "foo", bar: "bar" };
-const men = makeWith(item).map((e) => "Mr." + e);
+const men = makeWith(item)
+  .map((e) => "Mr." + e)
+  .getObj();
 // { foo: "Mr.foo", bar: "Mr.bar" }
 console.log(men);
 ```
